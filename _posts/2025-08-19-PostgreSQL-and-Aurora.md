@@ -86,18 +86,24 @@ Bind variables
 - <a href="https://github.com/dotnet/efcore/issues/13617#issuecomment-716052091">IN() list queries are not parameterized </a>
 - <a href="https://github.com/prisma/prisma/issues/21648"> Prevent Prisma from reaching bind parameters limit</a>
 
+### DB time model/Wait event
+![DB time model](/images/psql/db-time-overall.gif)
+
+- Snapshot
+- Acitve Session History
+- Query Plan Managment
+    - Upgrade/AB test/SaaS rollout
+    - Optimal vs Stability
 
 <a href="https://www.linkedin.com/posts/jipeng-liu_azure-sql-managed-instance-1-excessive-activity-7226446481514278912-u8Bc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACI4CSsBWsGS38S2UJ7lJ7pNPKzCYXJ24OA">Long compilation time issue</a>
 
-### DB time model/Wait event
- 
 ### Monitor
+- Performance Insights
+- Cloudwatch
 - APM
-- Metrics
-- Plan stability
 
 
-![alt text](/images/psql/psql-dr-promote-oldprimary-ha.png)
+## Lakehouse
 
 
 [BeiYuu]:    http://beiyuu.com  "BeiYuu"
