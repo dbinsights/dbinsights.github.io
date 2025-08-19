@@ -57,21 +57,44 @@ https://gitlab.com/gitlab-org/gitlab/-/merge_requests/22808
 ## Optimization
 
 ### Fine-tuning
-- Table stats
+- Identity
+- Explain 
+- Interpret and analysis
+    - estimated vs acutal rows
+    - most expensive cost 
+- Tuning and verify
+
+![Query processing](/images/psql/QPM-enhanced-Query-Processing-Flow.png)
+
+Stats
+- Table Stats
     - Partition stats
-- Column stats 
+- Column Stats 
     - Data distribution
     - Column corelation
-- System stats
-    - Seq/Random
-    - Sequtial read/ Scatter read 
+- System Stats
+    - Seq_page_cost/Random_page_cost = 1/4
+    - Scattered Read/Sequential Read = ((10ms+8*2ms)/8) / (10ms+2ms) = 0.27   <a href="https://www.apress.com/la/book/9781590596364">Jonathan Lewis</a>
 
-### DB time model/ wait event
-- 
+
+Bind value type
+- <a href="https://jonathanlewis.wordpress.com/2007/01/05/bind-variables/#comment-99416">Character columns 32, 128, 2000, or 4000 bytes </a>
+
+- <a href="https://www.brentozar.com/archive/2025/01/i-feel-sorry-for-untrained-developers-using-entity-framework/">EF string properties to nvarchar(max)</a>
+
+Bind variables
+- <a href="https://github.com/dotnet/efcore/issues/13617#issuecomment-716052091">IN() list queries are not parameterized </a>
+- <a href="https://github.com/prisma/prisma/issues/21648"> Prevent Prisma from reaching bind parameters limit</a>
+
+
+<a href="https://www.linkedin.com/posts/jipeng-liu_azure-sql-managed-instance-1-excessive-activity-7226446481514278912-u8Bc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACI4CSsBWsGS38S2UJ7lJ7pNPKzCYXJ24OA">Long compilation time issue</a>
+
+### DB time model/Wait event
+ 
 ### Monitor
 - APM
 - Metrics
-- 
+- Plan stability
 
 
 ![alt text](/images/psql/psql-dr-promote-oldprimary-ha.png)
