@@ -105,7 +105,8 @@ Bind variables
 
 
 ### Cloud-native RDS
-- ![Aurora Architecture](/images/psql/Aurora-Architecture.gif)  <a href="https://www.linkedin.com/posts/jipeng-liu_azure-sql-managed-instance-1-excessive-activity-7226446481514278912-u8Bc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACI4CSsBWsGS38S2UJ7lJ7pNPKzCYXJ24OA">Paper</a>
+![Aurora Architecture](/images/psql/Aurora-Architecture.png)  
+- <a href="https://www.linkedin.com/posts/jipeng-liu_azure-sql-managed-instance-1-excessive-activity-7226446481514278912-u8Bc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACI4CSsBWsGS38S2UJ7lJ7pNPKzCYXJ24OA">AWS log based storage</a>
 
 
 - <a href="https://www.brentozar.com/archive/2019/01/how-azure-sql-db-hyperscale-works/">Azure SQL DB Hyperscale</a>
