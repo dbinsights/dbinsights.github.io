@@ -21,8 +21,8 @@ Terraform vs Pulumi
 
 - Mature and widely adopted and extensive provider support.
 
-    - CMK support for Geo-backup enabled Azure PostgreSQL flexible server
-    https://github.com/pulumi/pulumi-azure-native/issues/4014
+    - <a href="https://github.com/pulumi/pulumi-azure-native/issues/4014">CMK support for Geo-backup enabled Azure PostgreSQL flexible server </a>
+    
 
 ### DB Deployment
 Prisma vs EF 
@@ -35,21 +35,20 @@ Issues
 
 - table/column rename
 
-    - EF: Need specific seting, otherwise recreate table may happen
-    https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.migrations.migrationbuilder.renamecolumn?view=efcore-9.0
+    - <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.migrations.migrationbuilder.renamecolumn?view=efcore-9.0">EF: Need specific seting, otherwise recreate table may happen</a>
 
-    - https://github.com/prisma/prisma/issues/7710
+    - <a href="https://github.com/prisma/prisma/issues/7710">Prisma renaming issue </a>
 
 - Column order
-    - https://dba.stackexchange.com/questions/215037/ssdt-drop-and-recreate-tables-when-nothing-has-changed
+    - <a href="https://dba.stackexchange.com/questions/215037/ssdt-drop-and-recreate-tables-when-nothing-has-changed"> EF recreate table </a>
 
-    - https://github.com/prisma/prisma/issues/3623
+    - <a href="https://github.com/prisma/prisma/issues/3623">Prisma columns order issue</a>
 
 
 *Code First vs DB First*
 
-GitLab converts the existing Ruby schema from schema.rb to structure.sql
-https://gitlab.com/gitlab-org/gitlab/-/merge_requests/22808
+<a href="https://gitlab.com/gitlab-org/gitlab/-/merge_requests/22808"> GitLab converts the existing Ruby schema from schema.rb to structure.sql</a>
+
 
 
 
@@ -106,7 +105,7 @@ Bind variables
 
 ### Cloud-native RDS
 ![Aurora Architecture](/images/psql/Aurora-Architecture.png)  
-- <a href="https://www.linkedin.com/posts/jipeng-liu_azure-sql-managed-instance-1-excessive-activity-7226446481514278912-u8Bc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACI4CSsBWsGS38S2UJ7lJ7pNPKzCYXJ24OA">AWS log based storage</a>
+- <a href="https://www.amazon.science/publications/amazon-aurora-design-considerations-for-high-throughput-cloud-native-relational-databases">AWS log based storage</a>
 
 
 - <a href="https://www.brentozar.com/archive/2019/01/how-azure-sql-db-hyperscale-works/">Azure SQL DB Hyperscale</a>
