@@ -114,6 +114,6 @@ Bind variables
 
 
 ## Data Engineer
-![Lakehouse](/images/psql/Data-Archiving-Lakehouse.gif)
+![Lakehouse](/images/psql/Data-Archiving-Lakehouse.png)
 
 [BeiYuu]:    http://beiyuu.com  "BeiYuu"
