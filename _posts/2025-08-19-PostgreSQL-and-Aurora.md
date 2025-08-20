@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PostgreSQL and Aurora 
+title: PostgreSQL RDS and Aurora 
 description: 
 category: blog
 ---
@@ -68,10 +68,11 @@ https://gitlab.com/gitlab-org/gitlab/-/merge_requests/22808
 
 Stats
 - Table Stats
-    - Partition stats
+    - Partition Stats
 - Column Stats 
     - Data distribution
-    - Column corelation
+    - Correlation with physical ordering
+    - Correlation between columns
 - System Stats
     - Seq_page_cost/Random_page_cost = 1/4
     - Scattered Read/Sequential Read = ((10ms+8*2ms)/8) / (10ms+2ms) = 0.27   <a href="https://www.apress.com/la/book/9781590596364">Jonathan Lewis</a>
@@ -103,7 +104,15 @@ Bind variables
 - APM
 
 
-## Lakehouse
+### Cloud-native RDS
+- ![Aurora Architecture](/images/psql/Aurora-Architecture.gif)  <a href="https://www.linkedin.com/posts/jipeng-liu_azure-sql-managed-instance-1-excessive-activity-7226446481514278912-u8Bc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACI4CSsBWsGS38S2UJ7lJ7pNPKzCYXJ24OA">Paper</a>
 
+
+- <a href="https://www.brentozar.com/archive/2019/01/how-azure-sql-db-hyperscale-works/">Azure SQL DB Hyperscale</a>
+
+
+
+## Data Engineer
+![Lakehouse](/images/psql/Data-Archiving-Lakehouse.gif)
 
 [BeiYuu]:    http://beiyuu.com  "BeiYuu"
